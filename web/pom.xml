@@ -321,7 +321,7 @@
                         <encoding>UTF-8</encoding>
                         <resources>
                             <resource>
-                                <directory>${basedir}/../MapStore2/java/printing/resources/geoserver/print</directory>
+                                <directory>${basedir}/../backend/resources/printing</directory>
                                 <includes>
                                     <include>*</include>
                                 </includes>
