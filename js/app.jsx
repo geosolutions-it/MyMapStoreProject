@@ -14,7 +14,7 @@ const ConfigUtils = require('@mapstore/utils/ConfigUtils').default;
  *
  * ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
  */
-ConfigUtils.setConfigProp('translationsPath', './MapStore2/web/client/translations');
+ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
 ConfigUtils.setConfigProp('themePrefix', 'MyMapStoreProject');
 
 /**
@@ -22,7 +22,7 @@ ConfigUtils.setConfigProp('themePrefix', 'MyMapStoreProject');
  *
  * ConfigUtils.setLocalConfigurationFile('localConfig.json');
  */
-ConfigUtils.setLocalConfigurationFile('MapStore2/web/client/configs/localConfig.json');
+ConfigUtils.setLocalConfigurationFile('configs/localConfig.json');
 
 /**
  * Use a custom application configuration file with:

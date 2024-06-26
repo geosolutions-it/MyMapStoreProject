@@ -15,7 +15,7 @@ import {
  *
  * ConfigUtils.setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
  */
-setConfigProp('translationsPath', './MapStore2/web/client/translations');
+setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
 setConfigProp('themePrefix', 'MyMapStoreProject');
 
 /**
@@ -23,6 +23,6 @@ setConfigProp('themePrefix', 'MyMapStoreProject');
  *
  * ConfigUtils.setLocalConfigurationFile('localConfig.json');
  */
-setLocalConfigurationFile('MapStore2/web/client/configs/localConfig.json');
+setLocalConfigurationFile('configs/localConfig.json');
 
 import('@mapstore/product/geostoryEmbedded');

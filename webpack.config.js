@@ -9,7 +9,6 @@ module.exports = require('./MapStore2/build/buildConfig')({
     bundles: {
         'MyMapStoreProject': path.join(__dirname, "js", "app"),
         'MyMapStoreProject-embedded': path.join(__dirname, "js", "embedded"),
-        'MyMapStoreProject-api': path.join(__dirname, "MapStore2", "web", "client", "product", "api"),
         'geostory-embedded': path.join(__dirname, "js", "geostoryEmbedded"),
         "dashboard-embedded": path.join(__dirname, "js", "dashboardEmbedded")
     },
