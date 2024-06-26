@@ -1,6 +1,5 @@
 const path = require("path");
 
-const themeEntries = require('./MapStore2/build/themes.js').themeEntries;
 const extractThemesPlugin = require('./MapStore2/build/themes.js').extractThemesPlugin;
 const ModuleFederationPlugin = require('./MapStore2/build/moduleFederation').plugin;
 
@@ -12,7 +11,9 @@ module.exports = require('./MapStore2/build/buildConfig')({
         'geostory-embedded': path.join(__dirname, "js", "geostoryEmbedded"),
         "dashboard-embedded": path.join(__dirname, "js", "dashboardEmbedded")
     },
-    themeEntries,
+    themeEntries: {
+        "themes/default": path.join(__dirname, "themes", "default", "theme.less")
+    },
     paths: {
         base: __dirname,
         dist: path.join(__dirname, "dist"),
